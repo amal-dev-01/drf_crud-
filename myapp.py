@@ -18,8 +18,8 @@ def get_data(id=None):
 
 def post_data():
     data = {
-        'name':'anu'
-        ,'roll':105,
+        'name':'Samu'
+        ,'roll':122,
         'city':'pgdi'
     }
     json_data = json.dumps(data)
@@ -28,7 +28,7 @@ def post_data():
     data = r.json()
     print(data)
 
-# post_data()
+post_data()
 
 def update_data():
     data = {
@@ -44,7 +44,7 @@ def update_data():
     print(data)
 
 
-update_data()
+# update_data()
 
 
 def delete_data():
