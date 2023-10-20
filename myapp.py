@@ -28,6 +28,31 @@ def post_data():
     data = r.json()
     print(data)
 
-post_data()
+# post_data()
+
+def update_data():
+    data = {
+        'id':2,
+        'name':'anuuu',
+        'roll':105,
+        'city':'pgdi'
+    }
+    json_data = json.dumps(data)
+    print(json_data)
+    r = requests.put(url = URL, data = json_data)
+    data = r.json()
+    print(data)
 
 
+update_data()
+
+
+def delete_data():
+    data = { 'id':3}
+    json_data = json.dumps(data)
+    print(json_data)
+    r = requests.delete(url = URL, data = json_data)
+    data = r.json()
+    print(data)
+
+# delete_data()

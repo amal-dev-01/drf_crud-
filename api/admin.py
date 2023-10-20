@@ -3,6 +3,10 @@ from api.models import Students
 # Register your models here.
 
 
-admin.site.register(Students)
+
+class StudentsAdmin(admin.ModelAdmin):
+    list_display = ('id', 'name', 'city') 
+
+admin.site.register(Students, StudentsAdmin)
 
 
